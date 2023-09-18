@@ -1,0 +1,54 @@
+doctype html
+html
+  head  
+    title Dhuban-Dance-Acadamy
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top 
+      ul 
+        #logo 
+          div 
+            img(src="static/dancelogo.png")
+          div 
+            |DDA
+        li #[a(href="/") Home]
+        li #[a(href="/") About]
+        li #[a(href="/") Services]
+        li #[a(href="/") Contact Us]
+    section#introSection 
+     div._1 Welcome to Dhuban-Dance-Acadamy
+     div._2 Practice like you’ve never won. Perform like you’ve never lost.
+
+    section#mission 
+      div.hc Our Dance Folks 
+      .container 
+        div.card 
+          h4 Bharatnatyam 
+          .content
+            img(src='static/bharatnatyam.png', alt='Image Description')
+            p 
+              |Bharatanatyam, a pre-eminent Indian classical dance form presumably the oldest classical dance heritage of India is regarded as mother of many other Indian classical dance forms. Conventionally a solo dance performed only by women, it initiated in the Hindu temples of Tamil Nadu and eventually flourished in South India. Theoretical base of this form traces back to ‘Natya Shastra’, the ancient Sanskrit Hindu text on the performing arts.
+        div.card 
+          h4 Kathak 
+          .content
+            img(src='static/kathak.png ', alt='Image Description')
+            p
+              |Kathak is one of the eight major forms of Indian classical dance. It is the classical dance form from Uttar Pradesh. The origin of Kathak is traditionally attributed to the traveling bards in ancient northern India known as Kathakars or storytellers.The term Kathak is derived from the Vedic Sanskrit word Katha which means "story", and Kathakar which means "the one who tells a story", or "to do with stories". 
+        div.card 
+          h4 Hip-Hop 
+          .content
+            img(src='static/hip-hop.png', alt='Image Description')
+            p
+              |Hip hop dance is a range of street dance styles primarily performed to hip hop music or that have evolved as part of hip hop culture. It is influenced by a wide range of styles that were created in the 1970s and made popular by dance crews in the United States. The television show Soul Train and the 1980s films Breakin', Beat Street, and Wild Style showcased these crews and dance styles in their early stages; therefore, giving hip-hop dance mainstream exposure.
+    section#sponsorSection 
+      h3 Our Sponsers 
+      #sponsers 
+        img(src="static/logo4.png" alt="sponser's img" class="spImg")   
+        img(src="static/logo3.png" alt="sponser's img" class="spImg")   
+        img(src="static/logo2.png" alt="sponser's img" class="spImg")   
+        img(src="static/logo1.png" alt="sponser's img" class="spImg")   
+    footer#footer 
+     | Copyright © 2023 DhubanDanceAcadamy.com | All rights reserved.    
+    script
+      include ../static/script.js

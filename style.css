@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Borel&family=Creepster&family=Kablammo&family=Press+Start+2P&display=swap');
+
+:root{
+    --berkshire:'Berkshire Swash', cursive;
+    --creepster:'Creepster', cursive;
+    --kabl:'Kablammo', cursive;
+    --prssStart:'Press Start 2P', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#navbar{
+    background-color: rgba(252, 93, 154, 0.548);
+    padding: 0px 2px;
+}
+#navbar ul{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+    margin: 0px 12px;
+}
+
+#navbar li a{
+    text-decoration: none;
+    padding: 9px 13px;
+    font-family: 'Borel', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+}
+
+#navbar li a:hover{
+    color: black;
+}
+
+#logo{
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: var(--prssStart);
+    justify-content: center;
+    color: white;
+    padding-bottom: 9px;
+    background-color: black;
+}
+#logo img{
+    width: 81px;
+    height: 49px;
+    filter: invert(1);
+}
+
+#introSection{
+    color: black;
+    font-family: var(--creepster);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    height: 300px;
+    position: relative;
+    text-align: center;
+}
+._2{
+   font-size: 1.2rem;
+}
+#introSection::before{
+    content: "";
+    background: url("../static/dancebg2.webp")  no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.45;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#mission{
+    height: 438px;
+}
+
+#mission .hc{
+    font-family: var(--creepster);
+    font-size: 37px;
+    text-align: center;
+    padding-top: 16px;
+}
+
+#mission .container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#mission .card{
+    border: 2px solid black;
+    width: 30%;
+    height: 308px;
+    border-radius: 5px;
+    margin: 11px 6px;
+    text-align: center;
+    padding-top: 12px;
+    font-family: var(--berkshire);
+}
+
+#mission .card .content{
+    display: flex;
+    font-size: 13px;
+    padding: 13px;
+}
+#mission .card .content p{
+    display: inline;
+    text-align: justify;
+    padding-left: 8px;
+}
+.content img{
+    width: 30%;
+    height: inherit;
+    display: block;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+#sponsorSection{
+    height: 220px;
+    background-color: rgb(233, 167, 230);
+    text-align: center;
+    font-family: var(--creepster);
+    font-size: 2.5rem;
+    padding-top: 23px;
+}
+#sponsers{
+    height: 120px;
+    width: 1200px;
+    margin: auto;
+    margin-top: 23px;
+}
+#sponsers .spImg{
+    height: 60%;
+    margin: 20px;
+}
+#footer{
+    height: 37px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 8px;
+    font-family: var(--prssStart);
+    align-items: center;
+    margin-top: 39px;
+}
